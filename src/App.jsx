@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
+import Navbar from "./components/NavBar";
 
 import AddCar from "./components/AddCar";
-import ViewCars from "./components/ViewCars";
+import ViewCars from "./components/ViewCar";
 import Home from "./components/Home";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/add-car" element={<AddCar />} />
-        <Route path="/cars" element={<ViewCars />} />
+        <Route path="/cars" element={<ViewCar />} />
       </Routes>
     </BrowserRouter>
   );
