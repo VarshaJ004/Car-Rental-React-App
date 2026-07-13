@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import NavBar from "./NavBar";
+import "./Car.css"
 
-const ViewCars = () => {
+const ViewCar = () => {
   const [cars, setCars] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -32,7 +34,11 @@ const ViewCars = () => {
   }
 
   return (
+    <div>
+        
+      
     <div className="container mt-5">
+       
       <h2 className="text-center mb-4">View All Cars</h2>
 
       <div className="table-responsive">
@@ -79,7 +85,8 @@ const ViewCars = () => {
         </table>
       </div>
     </div>
+    </div>
   );
 };
 
-export default ViewCars;
+export default ViewCar;
