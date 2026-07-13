@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import axios from "axios"
+import NavBar from "./NavBar";
 
 const AddCar = () => {
   const [car, setCar] = useState({
@@ -65,7 +66,9 @@ const AddCar = () => {
   };
 
   return (
+    
     <div className="container mt-5">
+        <NavBar />
       <div className="card shadow p-4">
         <h2 className="text-center mb-4">Add Car</h2>
 

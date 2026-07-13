@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import NavBar from "./NavBar";
 
 const ViewCars = () => {
   const [cars, setCars] = useState([]);
@@ -32,7 +33,11 @@ const ViewCars = () => {
   }
 
   return (
+    <div>
+        <NavBar />
+      
     <div className="container mt-5">
+       
       <h2 className="text-center mb-4">View All Cars</h2>
 
       <div className="table-responsive">
@@ -78,6 +83,7 @@ const ViewCars = () => {
           </tbody>
         </table>
       </div>
+    </div>
     </div>
   );
 };
