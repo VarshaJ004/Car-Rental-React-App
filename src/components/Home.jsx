@@ -1,10 +1,12 @@
 import React from "react";
 import NavBar from "./Navbar";
+import "./Car.css"
+
 
 const Home = () => {
   return (
     <div className="container mt-5">
-        <NavBar />
+       
       <div className="text-center">
 
         <h1 className="display-4 fw-bold">

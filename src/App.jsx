@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/NavBar";
 
 import AddCar from "./components/AddCar";
-import ViewCars from "./components/ViewCar";
+import ViewCar from "./components/ViewCar";
 import Home from "./components/Home";
 
 function App() {

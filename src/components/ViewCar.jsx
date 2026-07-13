@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import NavBar from "./NavBar";
+import "./Car.css"
 
-const ViewCars = () => {
+const ViewCar = () => {
   const [cars, setCars] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -34,7 +35,7 @@ const ViewCars = () => {
 
   return (
     <div>
-        <NavBar />
+        
       
     <div className="container mt-5">
        
@@ -88,4 +89,4 @@ const ViewCars = () => {
   );
 };
 
-export default ViewCars;
+export default ViewCar;
